@@ -1,0 +1,115 @@
+.header {
+    width: 100%;
+    height: 85px;
+    border-bottom: solid 4px var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding: 0 16px;
+}
+
+.logo{
+    justify-self: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    font-family:'Belanosima', sans-serif;
+    color: var(--primary-color);
+    font-size: var(--Fsize-title);
+}
+
+.title>span:first-child{
+    font-size: calc(var(--Fsize-title) + 12px);
+    font-weight: 400;
+    margin-right: 4px;
+}
+
+.actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+button.contact-us {
+    background-color: var(--secondry-color);
+}
+
+button.contact-us:hover {
+    background-color: var(--primary-color);
+}
+
+button.categories{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+button.categories:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* .drop-down {
+    height: 0;
+    overflow: hidden;
+}
+
+.drop-down.show{
+    width: 20%;
+    min-width: 150px;
+    height: fit-content;
+    position: absolute;
+    top: 65px;
+    right: 136px;
+    background-color: rgba(0, 0, 0, 0.15);
+    animation: all 0.3s heightAnimation;
+} */
+
+.drop-down {
+    width: 20%;
+    min-width: 150px;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 65px;
+    right: 132px;
+    background-color: white;
+    z-index: 999;
+    padding: 0 16px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.drop-down.show {
+    padding: 8px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.178);
+    max-height: 300px;
+}
+
+.drop-down-item {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    padding: 8px;
+    border-bottom: solid 1px #f0f0f0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.drop-down-item:hover {
+    background-color: #f0f0f0;
+    color: var(--primary-color);
+}
+

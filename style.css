@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('./styles/header.style.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: "Open Sans", sans-serif; */
+}
+
+:root {
+    --primary-color: #45D26D;
+    --secondry-color: #89EEA6;
+    --accent-color: #56F483;
+    --background-color: #ffffff;
+
+    --font-color: #1c1c1c;
+
+    --Fsize-title: 24px;
+    --Fsize-regular: 16px;
+
+    --FF-opensans: 'Open Sans';
+    --FF-Rubik: 'Rubic';
+    --FF-opensans: 'Belanosima';
+}
+
+button {
+    outline: 0;
+    border: 0;
+    padding: 4px 16px;
+    height: 38px;
+    width: 113px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+button p {
+    font-size: var(--Fsize-regular);
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
