@@ -98,7 +98,7 @@ button.categories:hover {
 }
 
 .drop-down-item {
-    font-size: 16px;
+    font-size: var(--Fsize-regular);
     font-weight: 600;
     font-family: "Open Sans", sans-serif;
     padding: 8px;
@@ -113,3 +113,34 @@ button.categories:hover {
     color: var(--primary-color);
 }
 
+@media screen AND (max-width: 700px){
+    .logo{
+        left: 20px;
+        transform: translate(-20px, -50%);
+    }
+}
+
+@media screen AND (max-width: 500px){
+    .logo{
+        flex-direction: column;
+        margin-left: 8px;
+    }
+
+    .title {
+        line-height: 16px;
+        font-size: 14px;
+    }
+
+    .title>span:first-child{
+        font-size: 24px;
+    }
+
+    button {
+        padding: 2px 4px !important;
+        width: fit-content !important;
+    }
+
+    .drop-down {
+        right: 96px;
+    }
+}

@@ -29,6 +29,11 @@
     --FF-belanosima: 'Belanosima';
 }
 
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 button {
     outline: 0;
     border: 0;
@@ -45,4 +50,16 @@ button p {
     font-size: var(--Fsize-regular);
     font-weight: 600;
     font-family: "Open Sans", sans-serif;
+}
+
+@media screen AND (max-width: 700px){
+    :root {
+        --Fsize-title: 20px;
+        --Fsize-subtitle: 15px;
+        --Fsize-regular: 12px;
+        --Fsize-mid: 10px;
+        --Fsize-min: 8px;
+    }
+
+    
 }
