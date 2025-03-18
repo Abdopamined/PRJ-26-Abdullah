@@ -142,5 +142,6 @@ button.categories:hover {
 
     .drop-down {
         right: 96px;
+        width: 200px;
     }
 }
