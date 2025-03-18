@@ -1,0 +1,48 @@
+.video-card-normal {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 328px;
+    padding: 8px 8px 16px 8px;
+    font-size: var(--Fsize-regular);
+    font-family: var(--FF-opensans), sans-serif;
+    color: var(--font-color);
+}
+.video-card-normal-image-container {
+    height: 177px;
+}
+.video-card-normal-image {
+    width: 312px;
+    height: 177px;
+    border-radius: 16px;
+}
+
+.video-card-normal-play {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--secondry-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(138px) translateY(-106px); 
+}
+
+.video-card-normal-play svg {
+    margin-left: 3px;
+}
+
+.video-card-normal p {
+    font-size: var(--Fsize-regular);
+    font-family: var(--FF-opensans), sans-serif;
+    font-weight: bold;
+}
+.video-card-normal span {
+    font-size: var(--Fsize-min);
+    font-family: var(--FF-opensans), sans-serif;
+    font-weight: bold;
+    color: var(--secondry-color);
+
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,24 @@
+.image-card {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 300px;
+    height: 196px;
+    font-family: var(--FF-opensans);
+    font-size: var(--Fsize-regular);
+    font-weight: bold;
+    color: var(--font-color);
+}
+
+.image-card img {
+    width: 300px;
+    height: 196px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.image-card span {
+    padding: 4px;
+    border-radius: 4px;
+    background-color: var(--secondry-color);
+    transform: translateX(-8px) translateY(-38px);
+}

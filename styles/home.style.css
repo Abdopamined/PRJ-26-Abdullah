@@ -1,0 +1,195 @@
+.home-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 100%;
+    max-width: 1248px;
+    padding: 34px 0;
+}
+
+.home-banner-container {
+    display: flex;
+    width: 100%;
+    gap: 34px;
+}
+
+.home-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    height: 465px;
+    font-family: var(--FF-opensans);
+    font-size: var(--Fsize-regular);
+    font-weight: bold;
+}
+.home-banner img {
+    width: 100%;
+    height: 465px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.home-banner span {
+    padding: 4px;
+    border-radius: 4px;
+    background-color: var(--secondry-color);
+    color: var(--font-color);
+    transform: translateX(-8px) translateY(-38px);
+}
+
+.trending-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-family: var(--FF-opensans);
+    font-size: var(--Fsize-regular);
+    font-weight: bold;
+}
+.trending-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.trending-title {
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--secondry-color);
+}
+
+.section-title {
+    font-family: var(--FF-opensans);
+    font-size: 11px;
+    font-weight: bold;
+    color: var(--font-color);
+}
+
+.home-stories-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.home-cards-content {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    height: auto;
+}
+.home-stories-section-cards {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 34px;
+}
+
+.side-notices {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-family: var(--FF-opensans);
+    color: var(--font-color);
+}
+.sub-notice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 182px;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid var(--secondry-color);
+    border-radius: 16px;
+
+}
+.donate-notice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 182px;
+    gap: 16px;
+    padding: 34px 16px;
+    background-color: var(--secondry-color);
+    border-radius: 16px;
+}
+.notice-title {
+    font-size: var(--Fsize-title);
+    font-weight: bold;
+}
+.notice-text {
+    font-size: var(--Fsize-regular);
+    font-weight: bold;
+}
+.notice-button {
+    background-color: var(--primary-color);
+    font-size: var(--Fsize-regular);
+}
+.notice-button:hover {
+    background-color: #38b25b;
+}
+
+.contactus-section {
+    width: 100%;
+    height: 430px;
+    padding: 36px 200px;
+    background-color: var(--secondry-color);
+}
+.contactus-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 750px;
+    font-family: var(--FF-opensans);
+    font-size: var(--Fsize-min);
+    color: #6A6A6A;
+    justify-self: center;
+}
+.contactus-form input {
+    padding: 16px;
+    border: none;
+    background-color: var(--secondry-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+.contactus-form textarea {
+    padding: 16px;
+    border: none;
+    background-color: var(--secondry-color);
+    border-bottom: 2px solid var(--primary-color);
+    max-width: 750px;
+    min-width: 750px;
+    max-height: 150px;
+    min-height: 50px;
+}
+.contactus-form textarea:focus, input:focus {
+    outline: none;
+}
+.contactus-form button {
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-size: var(--Fsize-regular);
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+}
+.contactus-form button:hover {
+    background-color: #38b25b;
+}
+/* font-family: var(--FF-opensans), sans-serif; */
