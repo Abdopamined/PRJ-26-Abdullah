@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('./styles/header.style.css');
 @import url('./styles/footer.style.css');
+@import url('./styles/category.card.normal.style.css');
+@import url('./styles/category.card.small.style.css');
+@import url('./styles/video.card.normal.style.css');
+@import url('./styles/video.card.small.style.css');
+@import url('./styles/image.card.small.style.css');
+@import url('./styles/home.style.css');
+@import url('./styles/home.style.small.css');
 
 * {
     padding: 0;
@@ -13,7 +20,7 @@
     --primary-color: #45D26D;
     --secondry-color: #89EEA6;
     --accent-color: #56F483;
-    --background-color: #ffffff;
+    --background-color: #F5FBF7;
 
     --font-color: #1c1c1c;
     --font-color-secondary: #5B5B5B;
@@ -32,6 +39,7 @@
 body{
     width: 100vw;
     overflow-x: hidden;
+    background-color: var(--background-color);
 }
 
 button {
@@ -52,7 +60,7 @@ button p {
     font-family: "Open Sans", sans-serif;
 }
 
-@media screen AND (max-width: 700px){
+/* @media screen AND (max-width: 700px){
     :root {
         --Fsize-title: 20px;
         --Fsize-subtitle: 15px;
@@ -62,4 +70,4 @@ button p {
     }
 
     
-}
+} */
