@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('./styles/header.style.css');
+@import url('./styles/footer.style.css');
 
 * {
     padding: 0;
@@ -15,13 +16,17 @@
     --background-color: #ffffff;
 
     --font-color: #1c1c1c;
+    --font-color-secondary: #5B5B5B;
 
     --Fsize-title: 24px;
+    --Fsize-subtitle: 19px;
     --Fsize-regular: 16px;
+    --Fsize-mid: 14px;
+    --Fsize-min: 12px;
 
     --FF-opensans: 'Open Sans';
     --FF-Rubik: 'Rubic';
-    --FF-opensans: 'Belanosima';
+    --FF-belanosima: 'Belanosima';
 }
 
 button {

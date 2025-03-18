@@ -1,0 +1,118 @@
+.footer {
+    width: 100%;
+    height: 185px;
+    background-color: var(--font-color);
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: 80% 20%;
+}
+
+.footer .copyright {
+    grid-area: 2 / 1 / 3 / -1;
+    color: var(--font-color-secondary);
+    font-family: var(--FF-belanosima);
+    justify-self: center;
+    text-align: center;
+}
+
+.footer .footer-logo {
+    grid-area: 1 / -2 / 2 / -3;
+    height: 100%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .site-info {
+    grid-area: 1 / -3 / 2 / -6;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer p {
+    color: var(--background-color);
+    font-family: var(--FF-belanosima);
+    font-size: var(--Fsize-min);
+}
+
+.footer p:nth-child(1) span:nth-child(1){
+    font-size: var(--Fsize-subtitle);
+}
+
+.footer p:nth-child(2) {
+    font-size: var(--Fsize-min);
+}
+
+.footer .news-types {
+    grid-area: 1 / 3 / 2 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.footer .social-media {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.footer .news-types .types-title {
+    font-family: var(--FF-opensans), sans-serif;
+    font-weight: 600;
+    font-size: var(--Fsize-mid);
+    margin-bottom: 4px;
+}
+
+.footer .news-types .type {
+    font-family: var(--FF-opensans), sans-serif;
+    font-weight: 400;
+    font-size: var(--Fsize-mid);
+}
+
+
+.footer .social-btn {
+    width: 28px;
+    height: 28px;
+    padding: 4px;
+}
+
+.footer .social-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen AND (max-width: 700px){
+    .footer{
+        grid-template-columns: repeat(10, 1fr);
+    }
+}
+
+@media screen AND (max-width: 500px){
+    .footer{
+        grid-template-columns: repeat(8, 1fr);
+        padding: 8px;
+    }
+
+    .footer .footer-logo {
+        grid-area: 1 / -1 / 2 / -2;
+    }
+    
+    .footer .site-info {
+        grid-area: 1 / -2 / 2 / -4;
+    }
+
+    .footer .news-types {
+        grid-area: 1 / 2 / 2 / 5;
+    }
+    
+    .footer .social-media {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+}
