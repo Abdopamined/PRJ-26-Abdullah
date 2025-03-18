@@ -24,7 +24,7 @@
 .home-banner {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: start;
     width: 100%;
     height: 465px;
     font-family: var(--FF-opensans), sans-serif;
@@ -40,6 +40,7 @@
 .home-banner span {
     padding: 4px;
     border-radius: 4px;
+    max-width: 286px;
     background-color: var(--secondry-color);
     color: var(--font-color);
     transform: translateX(-8px) translateY(-38px);
