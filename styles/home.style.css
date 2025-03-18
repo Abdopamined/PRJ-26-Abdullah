@@ -16,6 +16,7 @@
 
 .home-banner-container {
     display: flex;
+    flex-direction: row-reverse;
     width: 100%;
     gap: 34px;
 }
@@ -87,6 +88,7 @@
 }
 .home-cards-content {
     display: flex;
+    flex-direction: row-reverse;
     gap: 16px;
     width: 100%;
     height: auto;
