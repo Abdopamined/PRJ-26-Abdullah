@@ -47,7 +47,7 @@
     gap: 8px;
     
 }
-.category-filter button {
+.filter-button {
     background-color: #E8E8E8;
     color: #C4C4C4;
     height: 48px;
@@ -59,6 +59,14 @@
     font-family: var(--FF-rubik);
     font-size: var(--Fsize-mid);
     font-weight: bold;
+}
+.filter-button:hover {
+    background-color: #b1f0c3;
+    color: #65b081;
+}
+.active {
+    background-color: var(--secondry-color);
+    color: var(--primary-color);
 }
 
 
