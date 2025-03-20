@@ -37,7 +37,7 @@
     width: 100%;
     border-radius: 34px;
     border: none;
-    font-size: var(--Fsize-regular);
+    font-size: var(--Fsize-mid);
     font-family: var(--FF-opensans);
     color: var(--font-color);
     background-color: white;
@@ -58,7 +58,6 @@
     vertical-align: middle;
     font-family: var(--FF-rubik);
     font-size: var(--Fsize-mid);
-    font-weight: bold;
 }
 .filter-button:hover {
     background-color: #b1f0c3;
