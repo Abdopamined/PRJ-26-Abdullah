@@ -1,0 +1,122 @@
+.category-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.category-content {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 100%;
+    max-width: 1248px;
+    padding: 34px 0;
+}
+
+
+
+.category-controls {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+.search-bar {
+    padding: 0 0 0 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    border-radius: 34px;
+    border: 1px solid #E0E0E0;
+    background-color: white;
+}
+.search-bar input {
+    padding: 8px 16px;
+    width: 100%;
+    border-radius: 34px;
+    border: none;
+    font-size: var(--Fsize-regular);
+    font-family: var(--FF-opensans);
+    color: var(--font-color);
+    background-color: white;
+}
+.category-filter {
+    display: flex;
+    gap: 8px;
+    
+}
+.category-filter button {
+    background-color: #E8E8E8;
+    color: #C4C4C4;
+    height: 48px;
+    width: auto;
+    padding: 0 16px;
+    border-radius: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: var(--FF-rubik);
+    font-size: var(--Fsize-mid);
+    font-weight: bold;
+}
+
+
+
+.category-banner-container {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+#category-title{
+    font-size: var(--Fsize-title);
+    font-weight: bolder;
+    font-family: var(--FF-opensans);
+    color: var(--primary-color);
+}
+#category-desc {
+    font-size: var(--Fsize-mid);
+    font-weight: bolder;
+    font-family: var(--FF-opensans);
+    color: #2BAE5C;
+}
+.category-banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    object-fit: cover;
+    row-gap: 16px;
+}
+.category-cards-container {
+    display: flex;
+    justify-content: space-between;
+    scrollbar-width: none;
+    width: 100%;
+}
+.side-notices {
+    width: 225px;
+}
+#sub-notice {
+    width: 225px;
+}
+#donate-notice {
+    width: 225px;
+}
+
+
+
+.container {
+    display: flex; 
+    flex-direction: column; 
+    gap: 16px;
+}
+.category-all-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 36px;
+    width: 100%;
+}
+#all-articles {
+    padding: 0 88px;
+}
