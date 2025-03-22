@@ -3,14 +3,14 @@ const categoriesBtn = document.getElementsByClassName("categories")[0];
 const homePage = document.getElementsByClassName("home-page")[0];
 const categoryPage = document.getElementsByClassName("category-page")[0];
 const itemsBtns = document.getElementsByClassName("drop-down-item");
+const filterBtns = document.getElementsByClassName("filter-button");
+const searchBox = document.getElementById("searchBox");
 
 let timeoutId = null;
 
 categoriesBtn.addEventListener("click", () => {
-  // clearTimeout(timeoutId);
   dropdown.classList.toggle("show");
   categoriesBtn.classList.toggle("show");
-  console.log(itemsBtns);
 });
 
 Array.from(itemsBtns).forEach((btn, i) => {
@@ -28,13 +28,14 @@ Array.from(itemsBtns).forEach((btn, i) => {
       homePage.style.opacity = "0";
       categoryPage.style.opacity = "1";
 
-      Array.from(
-        document.getElementsByClassName("filter-button")
-      ).forEach((element) => {
-        element.classList.remove("active");
-      });
+      Array.from(document.getElementsByClassName("filter-button")).forEach(
+        (element) => {
+          element.classList.remove("active");
+        }
+      );
       let currentCat = document.getElementsByClassName("filter-button")[i - 1];
       currentCat.classList.add("active");
+      changePlaceHolder(i - 1);
       setTimeout(() => {
         homePage.classList.add("hidden");
         categoryPage.classList.remove("hidden");
@@ -42,21 +43,38 @@ Array.from(itemsBtns).forEach((btn, i) => {
     });
   }
 });
-// categoriesBtn.addEventListener("click", () => {
-//   dropdown.classList.remove("show");
-//   // scheduleHideDropdown();
-// });
 
-// dropdown.addEventListener("mouseenter", () => {
-//   clearTimeout(timeoutId);
-// });
+Array.from(filterBtns).forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    Array.from(filterBtns).forEach((btn) => btn.classList.remove("active"));
+    btn.classList.add("active");
+    changePlaceHolder(i);
+  });
+});
 
-// dropdown.addEventListener("mouseleave", () => {
-//   scheduleHideDropdown();
-// });
+function changePlaceHolder(categoty) {
+  switch (categoty) {
+    case 0:
+      searchBox.placeholder = "إبحث في الأخبار ...";
+      break;
+    case 1:
+      searchBox.placeholder = "إبحث في التقارير وتحقيقات ...";
+      break;
+    case 2:
+      searchBox.placeholder = "إبحث في الإنفوجرافيك ...";
+      break;
+    case 3:
+      searchBox.placeholder = "إبحث في المشروعات والمبادرات ...";
+      break;
+    case 4:
+      searchBox.placeholder = "إبحث في البودكاست ...";
+      break;
+    case 5:
+      searchBox.placeholder = "إبحث في المقالات ...";
+      break;
 
-// function scheduleHideDropdown() {
-//   timeoutId = setTimeout(() => {
-//     dropdown.classList.remove("show");
-//   }, 100);
-// }
+    default:
+      searchBox.placeholder = "إبحث...";
+      break;
+  }
+}

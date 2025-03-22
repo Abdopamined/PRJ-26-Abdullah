@@ -112,13 +112,12 @@
     width: 225px;
 }
 
-
-
 .container {
     display: flex; 
     flex-direction: column; 
     gap: 16px;
 }
+
 .category-all-cards {
     display: flex;
     flex-wrap: wrap;
