@@ -7,6 +7,17 @@
     font-size: var(--Fsize-regular);
     font-family: var(--FF-opensans);
     color: var(--font-color);
+    border: 1px solid transparent;
+    border-radius: 16px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; */
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.category-card-small:hover {
+    border: 1px solid var(--primary-color);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    transition: all 0.3s ease-in-out;
 }
 
 .category-card-small-image {
