@@ -77,3 +77,13 @@ button p {
 
     
 } */
+
+.home-page.hidden{
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.category-page.hidden{
+    display: none;
+    transition: all 0.3s ease-in-out;
+}

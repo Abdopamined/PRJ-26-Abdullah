@@ -60,6 +60,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 4px;
 }
 
@@ -81,6 +82,11 @@
     width: 28px;
     height: 28px;
     padding: 4px;
+}
+
+.social-btn.instagram{
+    width: 36px;
+    height: 36px;
 }
 
 .footer .social-btn img {
