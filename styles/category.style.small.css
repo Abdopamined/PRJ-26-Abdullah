@@ -1,0 +1,65 @@
+@media only screen and (max-width: 500px) {
+    .category-page {
+        width: 100%;
+    }
+    .category-content {
+        gap: 16px;
+        padding: 16px 8px;
+        width: 100%;
+        max-width: none;
+    }
+    .category-controls {
+        flex-direction: column;
+    }
+    .category-filter {
+        width: 100%;
+        overflow-x: scroll;
+        align-self: flex-start;
+        scrollbar-width: none;
+    }
+
+
+
+    .category-banner-container {
+        flex-direction: column-reverse;
+    }
+    .category-cards-container {
+        overflow-x: scroll;
+    }
+    .category-side-notices {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+    .notices {
+        flex-direction: row;
+        width: 100%;
+    }
+    #sub-notice {
+        align-items: center;
+        width: 100%;
+        gap: 16px;
+        padding: 34px 16px;
+    }
+    #donate-notice {
+        align-items: center;
+        width: 100%;
+    }
+
+
+
+    .category-all-cards {
+        row-gap: 16px;
+    }
+    #all-articles {
+        padding: 0;
+    }
+    #category-card-small {
+        width: 49%;
+    }
+    #category-card-small img {
+        width: 100%;
+        height: 100px;
+    }
+}

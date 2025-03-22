@@ -1,0 +1,27 @@
+@media only screen and (max-width: 500px) {
+    .blog-page {
+        width: 100%;
+    }
+    .blog-content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        max-width: none;
+        padding: 16px 8px;
+    }
+
+
+    .banner img{
+        width: 100%;
+        height: 225px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .article {
+        padding: 0 8px;
+        font-family: var(--FF-cairo);
+        font-size: var(--Fsize-mid);
+    }
+}

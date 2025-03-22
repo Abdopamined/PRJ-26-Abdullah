@@ -12,7 +12,9 @@
 @import url('./styles/home.style.css');
 @import url('./styles/home.style.small.css');
 @import url('./styles/category.style.css');
+@import url('./styles/category.style.small.css');
 @import url('./styles/blog.style.css');
+@import url('./styles/blog.style.small.css');
 
 * {
     padding: 0;
