@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('./styles/header.style.css');
 @import url('./styles/footer.style.css');
 @import url('./styles/category.card.normal.style.css');
@@ -8,6 +11,8 @@
 @import url('./styles/image.card.small.style.css');
 @import url('./styles/home.style.css');
 @import url('./styles/home.style.small.css');
+@import url('./styles/category.style.css');
+@import url('./styles/blog.style.css');
 
 * {
     padding: 0;
@@ -31,9 +36,10 @@
     --Fsize-mid: 14px;
     --Fsize-min: 12px;
 
-    --FF-opensans: 'Open Sans';
-    --FF-Rubik: 'Rubic';
+    --FF-opensans: "Open Sans", sans-serif;
+    --FF-rubik: "Rubik", sans-serif;
     --FF-belanosima: 'Belanosima';
+    --FF-cairo: "Cairo", sans-serif;
 }
 
 body{
