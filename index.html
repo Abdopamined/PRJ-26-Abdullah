@@ -4,39 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eco Media</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_drop_down" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=reorder" />
 
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            <div class="img-container">
-                <img src="./assets/Logo.png" alt="">
+        <div class="col">
+            <div class="logo">
+                <div class="img-container">
+                    <img src="./assets/Logo.png" alt="">
+                </div>
+                <p class="title"><span>eco</span><span>MEDIA</span></p>
             </div>
-            <p class="title"><span>eco</span><span>MEDIA</span></p>
+            <p class="slogan">معـاً لمستقبــــل <b>أخضـــر</b></p>
         </div>
         <div class="actions">
-            <button type="button" class="contact-us">
+            <!-- <button type="button" class="contact-us">
                 <p class="label">تواصل معنا</p>
-            </button>
+            </button> -->
             <button type="button" class="categories">
                 <span class="material-symbols-rounded">
-                    arrow_drop_down
+                    reorder
                     </span>
-                <p class="label">التصنيفات</p>
+               
             </button>
         </div>
 
         <div class="drop-down">
-            <p class="drop-down-item">الأخبار</p>
-            <p class="drop-down-item">تقارير و تحقيقات</p>
-            <p class="drop-down-item">انفوجرافيك</p>
-            <p class="drop-down-item">مشروعات و مبادرات</p>
-            <p class="drop-down-item">بودكاست</p>
-            <p class="drop-down-item">مقالات</p>
+            <div class="drop-down-items">
+                <p class="drop-down-item">الرئيسية</p>
+                <p class="drop-down-item">الأخبار</p>
+                <p class="drop-down-item">تقارير و تحقيقات</p>
+                <p class="drop-down-item">انفوجرافيك</p>
+                <p class="drop-down-item">مشروعات و مبادرات</p>
+                <p class="drop-down-item">بودكاست</p>
+                <p class="drop-down-item">مقالات</p>
+                <p class="drop-down-item link">تواصل معنا</p>
+            </div>
+
+
+
+            <div class="social-media">
+                <a href="https://www.facebook.com/share/19m58nMYar/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-btn facebook"><img src="./assets/icons/facebook.png" alt="" srcset="" ></a>
+                <a href="https://www.instagram.com/ecomedia2025?igsh=MTVkajlwd3Q5M2tm&utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-btn instagram"><img src="./assets/icons/instagram.png" alt="" srcset="" ></a>
+                <a href="https://www.tiktok.com/@ecomedia3?_t=ZS-8uRZKtSImIc&_r=1" target="_blank" rel="noopener noreferrer" class="social-btn tiktok"><img src="./assets/icons/tiktok.png" alt="" srcset="" ></a>
+            </div>
         </div>
+
+        
+        
     </header>
 
     <main class="main">
@@ -117,10 +135,118 @@
                     <input type="text" placeholder="الاسم">
                     <input type="email" placeholder="الايميل">
                     <textarea placeholder="راسلنا"></textarea>
-                    <button>ارسل</button>
+                    <button type="button">ارسل</button>
                 </div>
             </div>
         </div>
+
+        <div class="category-page hidden">
+            <div class="category-content">
+    
+                <div class="category-controls">
+                    <div class="search-bar">
+                        <input type="search" name="" id="" placeholder="ابحث في المقالات">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_107_274)">
+                            <path d="M20.6667 18.6667H19.6133L19.24 18.3067C20.5467 16.7867 21.3333 14.8133 21.3333 12.6667C21.3333 7.88 17.4533 4 12.6667 4C7.88 4 4 7.88 4 12.6667C4 17.4533 7.88 21.3333 12.6667 21.3333C14.8133 21.3333 16.7867 20.5467 18.3067 19.24L18.6667 19.6133V20.6667L25.3333 27.32L27.32 25.3333L20.6667 18.6667ZM12.6667 18.6667C9.34667 18.6667 6.66667 15.9867 6.66667 12.6667C6.66667 9.34667 9.34667 6.66667 12.6667 6.66667C15.9867 6.66667 18.6667 9.34667 18.6667 12.6667C18.6667 15.9867 15.9867 18.6667 12.6667 18.6667Z" fill="#C2C2C2"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_107_274">
+                            <rect width="32" height="32" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="category-filter">
+                        <button class="filter-button">اخبار</button>
+                        <button class="filter-button">تقارير</button>
+                        <button class="filter-button">انفوجرافيك</button>
+                        <!-- <button class="filter-button">فيديوهات</button> -->
+                        <button class="filter-button">مشروعات</button>
+                        <button class="filter-button">بودكاست</button>
+                        <button class="filter-button">مقالات</button>
+                    </div>
+                </div>
+    
+                <div class="container">
+                    <span class="section-title">TOP ARTICLES</span>
+                    <div class="category-banner-container">
+                        <div class="side-notices">
+                            <span id="category-title">مقالات</span>
+                            <p id="category-desc">احصل على الأحدث في أزمة المناخ ، والتلوث ، والكوارث الطبيعية ، وجهود الحفظ ، والمزيد من الأخبار البيئية.</p>
+                            <div class="sub-notice" id="sub-notice">
+                                <span class="notice-title">النشرة الإخبارية</span>
+                                <span class="notice-text">ابق على اطلاع بالأخبار والإلهام من خط الطابقين الطبيعي.</span>
+                                <button class="notice-button">اشترك</button>
+                            </div>
+                            <div class="donate-notice" id="donate-notice">
+                                <span class="notice-title">نحن منظمة غير ربحية</span>
+                                <span class="notice-text">ساعدنا في سرد ​​قصص مؤثرة عن فقدان التنوع البيولوجي وتغير المناخ والمزيد.</span>
+                                <button class="notice-button">تبرع</button>
+                            </div>
+                        </div>
+                        <div class="category-banner">
+                            <div class="home-banner">
+                                <img src="" alt="">
+                                <span>عنوان المقال</span>
+                            </div>
+                            <div class="category-cards-container">
+                                <div class="category-card-normal">
+                                    <img src="" alt="" class="category-card-normal-image">
+                                    <p>“عز” يعود الي البحر... وزارة البيئة تطلق سلحفاة نادرة احتفالا باليوم العالمي للحياة البرية.</p>
+                                    <span>التصنيف</span>
+                                </div>
+                                <div class="category-card-normal">
+                                    <img src="" alt="" class="category-card-normal-image">
+                                    <p>“عز” يعود الي البحر... وزارة البيئة تطلق سلحفاة نادرة احتفالا باليوم العالمي للحياة البرية.</p>
+                                    <span>التصنيف</span>
+                                </div>
+                                <div class="category-card-normal">
+                                    <img src="" alt="" class="category-card-normal-image">
+                                    <p>“عز” يعود الي البحر... وزارة البيئة تطلق سلحفاة نادرة احتفالا باليوم العالمي للحياة البرية.</p>
+                                    <span>التصنيف</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="line"></div>
+    
+                <div class="container" id="all-articles">
+                    <span class="section-title">ALL ARTICLES</span>
+                    <div class="category-all-cards">
+                        <div class="category-card-small">
+                            <img src="" alt="" class="category-card-small-image">
+                            <p>“عز” يعود الي البحر... وزارة البيئة تطلق سلحفاة نادرة احتفالا باليوم العالمي للحياة البرية.</p>
+                            <span>التصنيف</span>
+                        </div>
+                        <div class="category-card-small">
+                            <img src="" alt="" class="category-card-small-image">
+                            <p>“عز” يعود الي البحر... وزارة البيئة تطلق سلحفاة نادرة احتفالا باليوم العالمي للحياة البرية.</p>
+                            <span>التصنيف</span>
+                        </div>
+                        <div class="category-card-small">
+                            <img src="" alt="" class="category-card-small-image">
+                            <p>“عز” يعود الي البحر... وزارة البيئة تطلق سلحفاة نادرة احتفالا باليوم العالمي للحياة البرية.</p>
+                            <span>التصنيف</span>
+                        </div>
+                        <div class="category-card-small">
+                            <img src="" alt="" class="category-card-small-image">
+                            <p>“عز” يعود الي البحر... وزارة البيئة تطلق سلحفاة نادرة احتفالا باليوم العالمي للحياة البرية.</p>
+                            <span>التصنيف</span>
+                        </div>
+                        <div class="category-card-small">
+                            <img src="" alt="" class="category-card-small-image">
+                            <p>“عز” يعود الي البحر... وزارة البيئة تطلق سلحفاة نادرة احتفالا باليوم العالمي للحياة البرية.</p>
+                            <span>التصنيف</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
     </main>
 
     <footer class="footer">
@@ -143,10 +269,9 @@
             <p class="type">بودكاست</p>
         </div>
         <div class="social-media">
-            <a href="#" class="social-btn facebook"><img src="./assets/icons/facebook.png" alt="" srcset=""></a>
-            <a href="#" class="social-btn linkedin"><img src="./assets/icons/linkedin.png" alt="" srcset=""></a>
-            <a href="#" class="social-btn youtube"><img src="./assets/icons/youtube.png" alt="" srcset=""></a>
-            <a href="#" class="social-btn tiktok"><img src="./assets/icons/tiktok.png" alt="" srcset=""></a>
+            <a href="https://www.facebook.com/share/19m58nMYar/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-btn facebook"><img src="./assets/icons/facebook.png" alt="" srcset="" ></a>
+            <a href="https://www.instagram.com/ecomedia2025?igsh=MTVkajlwd3Q5M2tm&utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-btn instagram"><img src="./assets/icons/instagram.png" alt="" srcset="" ></a>
+            <a href="https://www.tiktok.com/@ecomedia3?_t=ZS-8uRZKtSImIc&_r=1" target="_blank" rel="noopener noreferrer" class="social-btn tiktok"><img src="./assets/icons/tiktok.png" alt="" srcset="" ></a>
         </div>
         <p class="copyright">© 2025 Copyrights Conservation news. eco Media is a E.G.-based  environmental science news platform.</p>
     </footer>

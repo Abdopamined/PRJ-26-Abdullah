@@ -3,6 +3,8 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    transition: all 0.3s ease-in-out;
+
 }
 .category-content {
     display: flex;
@@ -64,8 +66,8 @@
     color: #65b081;
 }
 .active {
-    background-color: var(--secondry-color);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--font-color);
 }
 
 
