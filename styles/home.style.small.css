@@ -65,20 +65,21 @@
 
 
 
-    .side-notices {
+    #side-notices {
         display: flex;
         flex-direction: row;
+        width: 100%;
         gap: 8px;
         font-family: var(--FF-opensans);
         color: var(--font-color);
     }
-    .sub-notice {
+    #sub-notice {
         align-items: center;
         width: 100%;
         gap: 16px;
         padding: 34px 16px;
     }
-    .donate-notice {
+    #donate-notice {
         align-items: center;
         width: 100%;
     }
@@ -87,11 +88,13 @@
 
     .contactus-section {
         padding: 16px 8px;
+        align-items: center;
     }
     .contactus-form {
         margin-top: 16px;
         gap: 16px;
         min-width: 300px;
+        max-width: 350px;
     }
     .contactus-form textarea {
         max-width: 350px;
